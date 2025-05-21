@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Резюме – Сковрон Володимир</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <table border="0">
+    <tr>
+      <td>
+        <h1>Сковрон Володимир</h1>
+        <p><strong>Спеціаліст з Кібербезпеки та Криптографії</strong></p>
+
+        <h2>Мета</h2>
+        <p>
+          Отримати посаду спеціаліста з кібербезпеки, де я можу застосувати свої знання в області криптографії, управління ключами, безпечного зберігання даних та аналізу трафіку для захисту цифрової інформації.
+        </p>
+
+        <h2>Досвід роботи</h2>
+        <h3>Навчальний Проєкт – Криптографія та Безпечні Комунікації</h3>
+        <p><strong>2024 – дотепер</strong></p>
+        <ul>
+          <li>Генерація ключових пар PGP, цифрові підписи, шифрування та дешифрування.</li>
+          <li>Обмін ключами та створення моделі «павутини довіри».</li>
+          <li>Дослідження інструментів безпеки та підготовка документації.</li>
+        </ul>
+
+        <h3>3D-Моделювання в Blender</h3>
+        <p><strong>2023 – дотепер</strong></p>
+        <ul>
+          <li>Моделювання органіки та hard-surface об'єктів.</li>
+          <li>Текстурування, освітлення сцен, рендер.</li>
+          <li>Знайомство з UV-розгорткою та анімацією.</li>
+        </ul>
+
+        <h2>Сертифікати та Курси</h2>
+        <ul>
+          <li>CompTIA Security+ – підготовка в процесі</li>
+          <li>Cryptography I – Stanford University (Coursera)</li>
+          <li>Introduction to Cyber Security – Cisco Academy</li>
+          <li>Основи Blender – YouTube-проєкти</li>
+        </ul>
+
+        <h2>Мови</h2>
+        <ul>
+          <li>Українська – Рідна</li>
+          <li>Англійська – B1–B2</li>
+        </ul>
+
+        <p><em>Рекомендації надаються за запитом</em></p>
+      </td>
+
+      <td>
+        <h2>Контакти</h2>
+        <ul>
+          <li>Email: volodymyr@example.com</li>
+          <li>Телефон: +380-XX-XXX-XXXX</li>
+          <li>LinkedIn: linkedin.com/in/skovronvolodymyr</li>
+          <li>GitHub: github.com/skovronvolodymyr</li>
+        </ul>
+
+        <h2>Освіта</h2>
+        <p><strong>Бакалавр з Кібербезпеки</strong><br>Національний університет "Львівська політехніка"<br>(очікується у 2025 році)</p>
+
+        <h2>Про мене</h2>
+        <p>
+          Я захоплююся інформаційною безпекою та криптографією, а також креативними аспектами 3D-дизайну. Поєдную технічні навички з візуальним мисленням.
+        </p>
+
+        <h2>Навички</h2>
+        <ul>
+          <li>Шифрування (AES, RSA, ElGamal)</li>
+          <li>GnuPG, OpenSSL, Keyrings</li>
+          <li>Python, Java, C++</li>
+          <li>Wireshark, Nmap, Kali Linux</li>
+          <li>Blender (моделювання, рендер)</li>
+        </ul>
+      <h2>Тема</h2>
+        <label>
+          <input type="checkbox" id="themeToggle"> Нічний режим
+        </label>
+      </td>
+    </tr>
+  </table>
+
+  <section>
+    <h2>Коментарі роботодавців</h2>
+    <div id="comments"></div>
+  </section>
+
+  <footer>
+    <h2>Інформація з localStorage</h2>
+    <div id="local-data"></div>
+  </footer>
+
+  <!-- Модальне вікно -->
+<div id="modal">
+  <div class="modal-content">
+    <button id="closeModal">×</button>
+    <h2>Форма зворотного зв’язку</h2>
+    <form action="https://formspree.io/f/xnndlpvq" method="POST">
+      <input type="text" name="name" placeholder="Ім’я" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Номер телефону">
+      <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

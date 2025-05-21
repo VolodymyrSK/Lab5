@@ -1,0 +1,246 @@
+/* Загальні стилі */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+  color: #333;
+  animation: fadeInBody 0.8s ease-in;
+}
+
+/* Нічна тема */
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-theme table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-theme td:last-child {
+  background-color: #2a2a2a;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: #87cefa;
+  border-color: #444;
+}
+
+body.dark-theme a {
+  color: #66ccff;
+}
+
+body.dark-theme a:hover {
+  color: #33aaff;
+}
+
+/* Анімація появи сторінки */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Основна таблиця */
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Ліва та права колонки */
+td {
+  vertical-align: top;
+  padding: 30px;
+}
+
+td:first-child {
+  width: 65%;
+  border-right: 1px solid #e0e0e0;
+}
+
+td:last-child {
+  width: 35%;
+  background-color: #eaf6fc;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 32px;
+  color: #183153;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #20465e;
+  border-bottom: 2px solid #a2c2dd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 17px;
+  color: #2e4a5f;
+  margin-bottom: 5px;
+}
+
+/* Списки */
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+ul li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* Параграфи */
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Анімація наводження для заголовків */
+h1, h2, h3 {
+  transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+  color: #0088cc;
+  cursor: default;
+}
+
+/* Посилання */
+a {
+  color: #0077aa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005577;
+  text-decoration: underline;
+}
+
+/* Коментарі */
+#comments {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+body.dark-theme #comments {
+  background-color: #1c1c1c;
+  border-color: #444;
+}
+
+/* Футер */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ddd;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+
+body.dark-theme footer {
+  background-color: #1a1a1a;
+  border-top-color: #444;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Кнопка "×" всередині .modal-content */
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+#closeModal:hover {
+  color: #f00;
+}
+
+
+#modal > div {
+  background: #fff;
+  padding: 20px;
+  margin: 100px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+body.dark-theme #modal > div {
+  background: #222;
+  color: #fff;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #0077aa;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005577;
+}
+
+/* Тема перемикача */
+label input[type="checkbox"] {
+  margin-right: 8px;
+}
