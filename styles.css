@@ -244,3 +244,26 @@ form button:hover {
 label input[type="checkbox"] {
   margin-right: 8px;
 }
+@media (max-width: 768px) {
+  table,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    padding: 8px 0;
+  }
+
+  label input[type="checkbox"] {
+    transform: scale(1.5); /* більший перемикач */
+    margin-right: 8px;
+  }
+
+  #modal .modal-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+}
