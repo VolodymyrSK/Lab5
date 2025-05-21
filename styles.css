@@ -244,22 +244,4 @@ form button:hover {
 label input[type="checkbox"] {
   margin-right: 8px;
 }
-@media (max-width: 768px) {
-    table {
-        display: block;
-    }
 
-    td {
-        display: block;
-        width: 100%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-}
