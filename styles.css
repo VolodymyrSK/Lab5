@@ -244,6 +244,21 @@ form button:hover {
 label input[type="checkbox"] {
   margin-right: 8px;
 }
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  padding: 12px;
+}
 @media (max-width: 768px) {
   table,
   tr,
