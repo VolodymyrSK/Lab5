@@ -244,41 +244,22 @@ form button:hover {
 label input[type="checkbox"] {
   margin-right: 8px;
 }
-body {
-  margin: 0;
-  font-family: sans-serif;
-  padding: 16px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  vertical-align: top;
-  padding: 12px;
-}
 @media (max-width: 768px) {
-  table,
-  tr,
-  td {
-    display: block;
-    width: 100%;
-  }
+    table {
+        display: block;
+    }
 
-  td {
-    padding: 8px 0;
-  }
+    td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
 
-  label input[type="checkbox"] {
-    transform: scale(1.5); /* більший перемикач */
-    margin-right: 8px;
-  }
+    h1 {
+        font-size: 22px;
+    }
 
-  #modal .modal-content {
-    width: 100%;
-    max-width: 100%;
-    padding: 20px;
-  }
+    h2 {
+        font-size: 16px;
+    }
 }
